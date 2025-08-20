@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".Productactivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="200dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/display_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bbs" />
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/Product_name_pv1"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="60dp"
+            android:ellipsize="end"
+            android:hint="Product_name"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/description1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="60dp"
+            android:drawablePadding="4dp"
+            android:layout_marginBottom="10dp"
+            android:text="Simple Description"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/robotomono"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/quntity1"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="4dp"
+            android:hint="Product_quantity"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Price1"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="4dp"
+            android:layout_marginStart="60dp"
+            android:hint="Product_price"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/product_status1"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="60dp"
+            android:drawablePadding="4dp"
+            android:hint="Product_Status"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/catagory1"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="10dp">
+
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/postt1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:text="Add"
+            android:textColor="@color/gray"
+            android:background="@drawable/button"
+            android:fontFamily="@font/robotomono"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

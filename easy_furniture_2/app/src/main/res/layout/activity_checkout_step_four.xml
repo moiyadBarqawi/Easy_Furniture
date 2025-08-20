@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutStepFour">
+
+    <com.baoyachi.stepview.HorizontalStepView
+        android:id="@+id/step_view3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie1"
+        android:layout_width="405dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="34dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_txt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/confirm" />
+
+    <TextView
+        android:id="@+id/confirm_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Thank You!"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/proteststrikeregular"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_txt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie1" />
+
+    <TextView
+        android:id="@+id/confirm_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="Your order is confirmed"
+        android:fontFamily="@font/proteststrikeregular"
+        android:textColor="@color/blue"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/done_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_txt1" />
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="124dp"
+        android:text="Done"
+        android:textSize="20sp"
+        android:backgroundTint="@color/pink3"
+        android:background="@drawable/button"
+        android:fontFamily="@font/robotomono"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_txt2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "87977379047",
+    "firebase_url": "https://easy-furniture-59f61-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "easy-furniture-59f61",
+    "storage_bucket": "easy-furniture-59f61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87977379047:android:59b1d71c17f701d9554e42",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO5MpoupNSFeb1vHnaQ4ybHyperAU2LRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
