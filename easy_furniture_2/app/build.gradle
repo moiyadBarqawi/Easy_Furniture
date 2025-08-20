@@ -1,15 +1,14 @@
 plugins {
     id 'com.android.application'
-    id 'com.google.gms.google-services'
 }
 
 android {
-    namespace 'com.example.project'
-    compileSdk 34
+    namespace 'com.example.easy_furniture_1'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.project"
-        minSdk 26
+        applicationId "com.example.easy_furniture_1"
+        minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -27,29 +26,14 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    buildFeatures {
-        viewBinding true
-    }
-    viewBinding {
-        enabled = true
-    }
 }
 
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.android.volley:volley:1.2.1'
-    implementation 'com.google.firebase:firebase-firestore:24.10.2'
-    implementation 'com.google.firebase:firebase-storage:20.3.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation 'com.github.travijuu:numberpicker:1.0.7'
-    implementation 'com.github.acefalobi:android-stepper:0.3.0'
-    implementation 'com.github.baoyachi:StepView:1.9'
-    implementation 'com.airbnb.android:lottie:3.4.0'
-    implementation 'com.etebarian:meow-bottom-navigation:1.2.0'
-
 }
